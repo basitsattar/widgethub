@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url('bg.jpg');
+    font-family: helvetica,arial;
+}
+table{
+    text-align: center;
+    width: 100%;
+    min-height: 240px;
+}
+#calendar table{
+    min-height: 280px;
+}
+h2.monthName {
+    text-align: center;
+}    
+.today {
+    background:orange;
+}
+.disabled {
+    color: rgba(0,0,0,.4) !important;
+}
+div#clock {
+    max-width: 250px;
+}
+.icon{
+    font-size: 200px;
+    color: rgba(255,255,255,.9);
+}
+h1.name{
+    font-size: 30px;
+    font-weight: 100;
+}
+i.fa.fa-bolt {
+    left: 50px;
+    top: 80px;
+    font-size: 150px;
+    color: #333;
+    text-shadow: 1px 1px 1px #fff;
+    z-index: 10;
+}
+.content{
+    padding-top: 40px;
+    position: relative;
+}
+div.widget {
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    background: #e3e3ee;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    width: 31%;
+    color: #fff;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #333;
+    margin-bottom: 30px;
+    min-height: 300px;
+    min-width: 280px;
+}
+h2.widget-data {
+    text-shadow: 2px 2px 2px black;
+}
+.content>div:hover{
+    border-radius: 0px;
+    box-shadow: 6px 6px 6px #333;
+}
+div.first-widget{
+    background: #B9B739;
+}
+div.second-widget{
+    background: #119c7e;
+}
+div.third-widget{
+    background: #b739b9;
+}
+div.other-info{
+    background: #2980b9;
+    width: 96%;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 5px #333 inset !important;
+    border-radius: 0px !important;
+}
+#calendar thead tr:first-child {
+    line-height: 40px;
+}
+p.title{
+    color: #fff;
+    font-size: 25px;
+}
+header{
+    background: #333;
+    padding: 10px 80px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px black;
+}
+div#clock {
+    overflow: auto;
+    margin: auto;
+    padding: 10px;
+}
+.lower{
+    display: none;
+}
+div.now{
+    padding: 10px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+}
+.center{
+    display: block;
+    margin: auto !important;
+    float: none !important;
+}
+.bottomBar {
+    position: absolute;
+    background: orange;
+    padding: 3px 10px;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px #333;
+}
+.back{
+    float: left;
+}
+.expand{
+    float: right;
+}
+a.reset {
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    background: orange;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    display: none;
+}
+a:hover{
+    color: red !important;
+}
+td {
+    border: 1px solid rgba(255,255,255,.1);
+}
+@-moz-keyframes rotatebox /*--for firefox--*/{
+
+    from{
+        -moz-transform:rotateY(0deg);
+    }       
+    to{
+        -moz-transform:rotateY(360deg);
+    }                       
+
+}
+@-webkit-keyframes rotatebox /*--for webkit--*/{
+
+    0%{
+        -webkit-transform:rotateZ(-2deg);
+    }
+    50%{
+        -webkit-transform:rotateZ(1deg);
+    } 
+    75%{
+        -webkit-transform:rotateZ(-1deg);
+    } 
+    100%{
+        -webkit-transform:rotateZ(0deg);
+    }                       
+
+}
+
